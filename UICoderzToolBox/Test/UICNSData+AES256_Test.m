@@ -32,38 +32,48 @@
 
 @implementation UICNSData_AES256_Test
 
+// NSData AES Encryption test
 + (void)test {
-	// NSData AES Encryption test
-	char *p = "0123456789012345678901234567890123456789";
-	NSString *key = @"123456";
-	NSData *data = [NSData dataWithBytes:p length:strlen(p)];
-	NSLog(@"data - original - %@", data);
+	NSLog(@"UICNSData_AES256_Test");
 	
-	NSData *encrypted = [data dataEncryptedWithKey:key];	
-	if (encrypted) {
-		NSLog(@"encrypted - OK - %@", encrypted);
-		NSData *decrypted = [encrypted dataDecryptedWithKey:key];
-		if (decrypted) {
-			NSLog(@"decrypted - OK - %@", decrypted);
-		}
-		NSLog(@"Encrypt -> Decrypt Test");
-		if ([decrypted length] == [data length]) {
-			int sum = 0;
-			const char* originalBytes = [data bytes];
-			const char* decryptedBytes = [decrypted bytes];
-			for(int i = 0; i < [decrypted length]; i++) {
-				if (originalBytes[i] != decryptedBytes[i]) {
-					sum++;
-				}
+	int test_count = 0;
+	int ok_count = 0;
+	
+	NSString *originalKey = @"0123456789abcdefghijklmnopqrstuv";
+	char *p = "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.";
+	int test_data_length = strlen(p);
+	
+	for (int j = 1; j <= [originalKey length]; j++) {
+		// check, key length
+		NSString *key = [originalKey substringWithRange:NSMakeRange(0, j)];
+		for (int i = test_data_length/2; i < test_data_length; i++) {
+			// check, byte length
+			NSData *data = [NSData dataWithBytes:p length:i];
+			NSData *encrypted = [data dataEncryptedWithKey:key];
+			NSData *decrypted = [encrypted dataDecryptedWithKey:key];
+			
+			BOOL encryptResult = (encrypted != nil);
+			BOOL decryptedResult = (decrypted != nil);
+			BOOL decryptedConfirmResult = [data isEqualToData:decrypted];
+			
+			test_count++;
+			
+			if (!encryptResult) {
+				NSLog(@"Pattern %dbytes, key length %d Encrypt Failed", i, j);
+				continue;
 			}
-			if (sum > 0) {
-				NSLog(@"Encrypt -> Decrypt Test:Byte check error");
+			if (!decryptedResult) {
+				NSLog(@"Pattern %dbytes, key length %d Decrypt Failed", i, j);
+				continue;
 			}
-		}
-		else {
-			NSLog(@"Encrypt -> Decrypt Test:size wrong");
+			if (!decryptedConfirmResult) {
+				NSLog(@"Pattern %dbytes, key length %d Restore Failed", i, j);
+				continue;
+			}
+			ok_count++;
 		}
 	}
+	NSLog(@"Test result OK = %d/%d", ok_count, test_count);
 }
 
 @end

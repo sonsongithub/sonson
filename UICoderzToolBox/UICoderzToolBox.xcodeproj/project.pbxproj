@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1407104F0FBB1E520003D09C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1407104E0FBB1E520003D09C /* Security.framework */; };
 		1431E48F0FB9CB7600F9DC41 /* UICNSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431E48D0FB9CB7600F9DC41 /* UICNSData+AES256.m */; };
 		1431E4960FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */; };
+		14335C690FBB16050063528A /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 14335C680FBB16050063528A /* test.m */; };
 		1D3623260D0F684500981E51 /* UICoderzToolBoxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* UICoderzToolBoxAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,10 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1407104E0FBB1E520003D09C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1431E48C0FB9CB7600F9DC41 /* UICNSData+AES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICNSData+AES256.h"; sourceTree = "<group>"; };
 		1431E48D0FB9CB7600F9DC41 /* UICNSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICNSData+AES256.m"; sourceTree = "<group>"; };
 		1431E4940FB9CBDA00F9DC41 /* UICNSData+AES256_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICNSData+AES256_Test.h"; sourceTree = "<group>"; };
 		1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICNSData+AES256_Test.m"; sourceTree = "<group>"; };
+		14335C670FBB16050063528A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		14335C680FBB16050063528A /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* UICoderzToolBoxAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICoderzToolBoxAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* UICoderzToolBoxAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICoderzToolBoxAppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				1407104F0FBB1E520003D09C /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,8 @@
 		1431E48E0FB9CB7600F9DC41 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				14335C670FBB16050063528A /* test.h */,
+				14335C680FBB16050063528A /* test.m */,
 				1431E4940FB9CBDA00F9DC41 /* UICNSData+AES256_Test.h */,
 				1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */,
 			);
@@ -118,6 +126,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1407104E0FBB1E520003D09C /* Security.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -182,6 +191,7 @@
 				1D3623260D0F684500981E51 /* UICoderzToolBoxAppDelegate.m in Sources */,
 				1431E48F0FB9CB7600F9DC41 /* UICNSData+AES256.m in Sources */,
 				1431E4960FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m in Sources */,
+				14335C690FBB16050063528A /* test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

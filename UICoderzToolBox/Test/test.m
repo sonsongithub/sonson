@@ -1,5 +1,5 @@
 //
-//  main.m
+//  test.m
 //  UICoderzToolBox
 // 
 // The MIT License
@@ -28,13 +28,10 @@
 //  Copyright 2009 sonson, sonson@Picture&Software. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "test.h"
+#import "UICNSData+AES256_Test.h"
+#import "UICNSData+AES256.h"
 
-int main(int argc, char *argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];	
-	test();
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+void test() {
+	[UICNSData_AES256_Test test];
 }

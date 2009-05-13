@@ -1,5 +1,5 @@
 //
-//  main.m
+//  test.h
 //  UICoderzToolBox
 // 
 // The MIT License
@@ -28,13 +28,6 @@
 //  Copyright 2009 sonson, sonson@Picture&Software. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "test.h"
+#import <Foundation/Foundation.h>
 
-int main(int argc, char *argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];	
-	test();
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
-}
+void test();

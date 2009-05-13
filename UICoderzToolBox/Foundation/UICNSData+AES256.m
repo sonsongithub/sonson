@@ -33,13 +33,12 @@
 
 - (NSData*)dataEncryptedWithKey:(NSString*)key {
 	NSData *encryptedData = nil;
-	
 	char keyPtr[kCCKeySizeAES256+1]; 
 	bzero(keyPtr, sizeof(keyPtr));
 	[key getCString:keyPtr maxLength: sizeof(keyPtr) encoding: NSUTF8StringEncoding];
 	
 	int byteLength = [self length];
-	int outputLength = byteLength + byteLength % kCCKeySizeAES256;
+	int outputLength = byteLength + kCCBlockSizeAES128 - byteLength % kCCBlockSizeAES128;
 	unsigned char *outputBuff = (unsigned char*)malloc(sizeof(char) * outputLength);
 	
 	size_t numBytesEncrypted = 0;
