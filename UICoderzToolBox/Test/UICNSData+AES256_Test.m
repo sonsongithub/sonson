@@ -1,5 +1,6 @@
 //
 //  UICNSData+AES256_Test.m
+//  UICoderzToolBox
 // 
 // The MIT License
 // 
@@ -33,7 +34,7 @@
 @implementation UICNSData_AES256_Test
 
 // NSData AES Encryption test
-+ (void)test {
++ (void)test:(id)object {
 	NSLog(@"UICNSData_AES256_Test");
 	
 	int test_count = 0;

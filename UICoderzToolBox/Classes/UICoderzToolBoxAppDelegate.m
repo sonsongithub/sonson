@@ -29,16 +29,18 @@
 //
 
 #import "UICoderzToolBoxAppDelegate.h"
+#import "UICTestSelectViewController.h"
 
 @implementation UICoderzToolBoxAppDelegate
 
 @synthesize window;
 
-
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
-
-    // Override point for customization after application launch
+	UICTestSelectViewController *con = [[UICTestSelectViewController alloc] init];
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:con];
+	[window addSubview:nav.view];
     [window makeKeyAndVisible];
+	[con release];
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  main.m
+//  UICTestSelectViewController.h
 //  UICoderzToolBox
 // 
 // The MIT License
@@ -24,16 +24,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-//  Created by sonson on 09/05/12.
-//  Copyright 2009 sonson, sonson@Picture&Software. All rights reserved.
+//  Created by sonson on 08/12/28.
+//  Copyright 2008 sonson, sonson@Picture&Software. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "test.h"
 
-int main(int argc, char *argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+
+@interface UICTestSelectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+	NSMutableArray *testClasses;
 }
+@end

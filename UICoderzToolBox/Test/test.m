@@ -33,5 +33,5 @@
 #import "UICNSData+AES256.h"
 
 void test() {
-	[UICNSData_AES256_Test test];
+	[UICNSData_AES256_Test test:nil];
 }

@@ -1,5 +1,6 @@
 //
 //  UICNSData+AES256_Test.h
+//  UICoderzToolBox
 // 
 // The MIT License
 // 
@@ -32,5 +33,5 @@
 
 @interface UICNSData_AES256_Test : NSObject {
 }
-+ (void)test;
++ (void)test:(id)object;
 @end

@@ -11,6 +11,14 @@
 		1431E48F0FB9CB7600F9DC41 /* UICNSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431E48D0FB9CB7600F9DC41 /* UICNSData+AES256.m */; };
 		1431E4960FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */; };
 		14335C690FBB16050063528A /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 14335C680FBB16050063528A /* test.m */; };
+		1441A5A00FC5A5BD00C12979 /* UICTestSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441A59F0FC5A5BD00C12979 /* UICTestSelectViewController.m */; };
+		1441A5C60FC5A96500C12979 /* UICBadgeView_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441A5C50FC5A96500C12979 /* UICBadgeView_Test.m */; };
+		1441A6F60FC5B1B000C12979 /* UICBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1441A6F50FC5B1B000C12979 /* UICBadgeView.m */; };
+		1441A6FD0FC5B23100C12979 /* test01a.png in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6F90FC5B23100C12979 /* test01a.png */; };
+		1441A6FE0FC5B23100C12979 /* test01b.png in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6FA0FC5B23100C12979 /* test01b.png */; };
+		1441A6FF0FC5B23100C12979 /* test02b.png in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6FB0FC5B23100C12979 /* test02b.png */; };
+		1441A7000FC5B23100C12979 /* test02a.png in Resources */ = {isa = PBXBuildFile; fileRef = 1441A6FC0FC5B23100C12979 /* test02a.png */; };
+		1441A7020FC5B27F00C12979 /* UICBadgeView_Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1441A7010FC5B27F00C12979 /* UICBadgeView_Test.xib */; };
 		1D3623260D0F684500981E51 /* UICoderzToolBoxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* UICoderzToolBoxAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -27,6 +35,17 @@
 		1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICNSData+AES256_Test.m"; sourceTree = "<group>"; };
 		14335C670FBB16050063528A /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		14335C680FBB16050063528A /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		1441A59E0FC5A5BD00C12979 /* UICTestSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICTestSelectViewController.h; sourceTree = "<group>"; };
+		1441A59F0FC5A5BD00C12979 /* UICTestSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICTestSelectViewController.m; sourceTree = "<group>"; };
+		1441A5C40FC5A96500C12979 /* UICBadgeView_Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICBadgeView_Test.h; sourceTree = "<group>"; };
+		1441A5C50FC5A96500C12979 /* UICBadgeView_Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICBadgeView_Test.m; sourceTree = "<group>"; };
+		1441A6F40FC5B1B000C12979 /* UICBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICBadgeView.h; sourceTree = "<group>"; };
+		1441A6F50FC5B1B000C12979 /* UICBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICBadgeView.m; sourceTree = "<group>"; };
+		1441A6F90FC5B23100C12979 /* test01a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01a.png; sourceTree = "<group>"; };
+		1441A6FA0FC5B23100C12979 /* test01b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test01b.png; sourceTree = "<group>"; };
+		1441A6FB0FC5B23100C12979 /* test02b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test02b.png; sourceTree = "<group>"; };
+		1441A6FC0FC5B23100C12979 /* test02a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test02a.png; sourceTree = "<group>"; };
+		1441A7010FC5B27F00C12979 /* UICBadgeView_Test.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UICBadgeView_Test.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* UICoderzToolBoxAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICoderzToolBoxAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* UICoderzToolBoxAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICoderzToolBoxAppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +78,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* UICoderzToolBoxAppDelegate.h */,
 				1D3623250D0F684500981E51 /* UICoderzToolBoxAppDelegate.m */,
+				1441A59E0FC5A5BD00C12979 /* UICTestSelectViewController.h */,
+				1441A59F0FC5A5BD00C12979 /* UICTestSelectViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -75,12 +96,44 @@
 		1431E48E0FB9CB7600F9DC41 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				1441A6F70FC5B23100C12979 /* data */,
+				1441A6F80FC5B23100C12979 /* resource */,
 				14335C670FBB16050063528A /* test.h */,
 				14335C680FBB16050063528A /* test.m */,
 				1431E4940FB9CBDA00F9DC41 /* UICNSData+AES256_Test.h */,
 				1431E4950FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m */,
+				1441A5C40FC5A96500C12979 /* UICBadgeView_Test.h */,
+				1441A5C50FC5A96500C12979 /* UICBadgeView_Test.m */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		1441A6F30FC5B1B000C12979 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1441A6F40FC5B1B000C12979 /* UICBadgeView.h */,
+				1441A6F50FC5B1B000C12979 /* UICBadgeView.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		1441A6F70FC5B23100C12979 /* data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		1441A6F80FC5B23100C12979 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				1441A6F90FC5B23100C12979 /* test01a.png */,
+				1441A6FA0FC5B23100C12979 /* test01b.png */,
+				1441A6FC0FC5B23100C12979 /* test02a.png */,
+				1441A6FB0FC5B23100C12979 /* test02b.png */,
+				1441A7010FC5B27F00C12979 /* UICBadgeView_Test.xib */,
+			);
+			path = resource;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -94,6 +147,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1441A6F30FC5B1B000C12979 /* UIKit */,
 				1431E48B0FB9CB7600F9DC41 /* Foundation */,
 				1431E48E0FB9CB7600F9DC41 /* Test */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -177,6 +231,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				1441A6FD0FC5B23100C12979 /* test01a.png in Resources */,
+				1441A6FE0FC5B23100C12979 /* test01b.png in Resources */,
+				1441A6FF0FC5B23100C12979 /* test02b.png in Resources */,
+				1441A7000FC5B23100C12979 /* test02a.png in Resources */,
+				1441A7020FC5B27F00C12979 /* UICBadgeView_Test.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +251,9 @@
 				1431E48F0FB9CB7600F9DC41 /* UICNSData+AES256.m in Sources */,
 				1431E4960FB9CBDA00F9DC41 /* UICNSData+AES256_Test.m in Sources */,
 				14335C690FBB16050063528A /* test.m in Sources */,
+				1441A5A00FC5A5BD00C12979 /* UICTestSelectViewController.m in Sources */,
+				1441A5C60FC5A96500C12979 /* UICBadgeView_Test.m in Sources */,
+				1441A6F60FC5B1B000C12979 /* UICBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

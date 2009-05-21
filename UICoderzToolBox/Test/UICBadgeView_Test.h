@@ -1,6 +1,6 @@
-//
-//  main.m
-//  UICoderzToolBox
+// 
+// Classes
+// UICBadgeView.h
 // 
 // The MIT License
 // 
@@ -24,16 +24,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
-//  Created by sonson on 09/05/12.
-//  Copyright 2009 sonson, sonson@Picture&Software. All rights reserved.
+//  Created by sonson on 08/12/28.
+//  Copyright 2008 sonson, sonson@Picture&Software. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "test.h"
 
-int main(int argc, char *argv[]) {
-    NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
-    [pool release];
-    return retVal;
+#import <UIKit/UIKit.h>
+#import "UICBadgeView.h"
+
+@interface UICBadgeView_Test : UIViewController {
+	IBOutlet UISlider		*slider;
+	IBOutlet UITextField	*inputField;
+	
+	UICBadgeView			*springboardBadge;
+	UICBadgeView			*tabbarBadge;
+	UICBadgeView			*freestyleBadge;
 }
++ (void)test:(id)object;
+@end
