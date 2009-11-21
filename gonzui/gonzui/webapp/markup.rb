@@ -263,7 +263,7 @@ module Gonzui
       package_id = @dbm.get_package_id(@package_name)
       path_ids = @dbm.get_path_ids(package_id)
       paths = path_ids.map {|path_id|
-        @dbm.get_path(path_id)
+        @dbm.get_path(path_id.to_s.to_i)
       }.map {|path| 
         path.split("/")
       }.find_all {|parts|
