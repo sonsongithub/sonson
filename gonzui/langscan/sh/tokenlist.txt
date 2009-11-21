@@ -1,0 +1,8 @@
+string
+fundef
+ident
+punct
+comment
+space
+heredoc_beg
+heredoc_end

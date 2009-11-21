@@ -1,0 +1,32 @@
+#! /usr/bin/env ruby
+#
+# langscan-test - langscan tester
+#
+# Copyright (C) 2005 Satoru Takabayashi <satoru@namazu.org> 
+#     All rights reserved.
+#     This is free software with ABSOLUTELY NO WARRANTY.
+#
+# You can redistribute it and/or modify it under the terms of 
+# the GNU General Public License version 2.
+#
+
+require 'langscan'
+if ARGV.length != 1
+  puts "Usage: langscan-test FILE"
+  exit
+end
+
+def assert_equal(a, b)
+  raise "\"#{a}\" expected but \"#{b}\"" unless a == b
+end
+
+
+file_name = ARGV.shift
+content = File.read(file_name)
+scanner = LangScan.choose(file_name, content)
+scanner = LangScan::Text if scanner.nil?
+scanner.scan(content) {|fragment|
+  raise "Fragment#type should be Symbol" unless fragment.type.is_a?(Symbol)
+  assert_equal(content[fragment.byteno...fragment.end_byteno], fragment.text)
+  p fragment
+}

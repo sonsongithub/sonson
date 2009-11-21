@@ -1,0 +1,8 @@
+integer
+floating
+imaginary
+string
+ident
+punct
+comment
+space

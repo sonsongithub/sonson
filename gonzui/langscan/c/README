@@ -1,0 +1,24 @@
+= langscan - program analyzer for source code search engine
+
+== Requirement
+
+* Ruby 1.8
+* flex 2.5.31 (flex 2.5.4 doesn't work)
+
+== Example
+
+  % cat -n hello.c
+       1  #include <stdio.h>
+       2
+       3  int main(int argc, char **argv)
+       4  {
+       5    printf("Hello World.\n");
+       6    return 0;
+       7  }
+  % ruby -rlangscan/c -e 'LangScan::C.scan(STDIN) {|f| p f}' < hello.c
+  ...
+
+== Author
+Tanaka Akira <akr@m17n.org>
+
+

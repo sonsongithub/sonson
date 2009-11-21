@@ -1,0 +1,11 @@
+integer
+floating
+string
+ident
+keyword
+fundef
+funcall
+classdef
+punct
+comment
+space
